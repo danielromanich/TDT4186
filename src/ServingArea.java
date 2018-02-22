@@ -20,13 +20,25 @@ public class ServingArea {
 
     public synchronized void enter(Customer customer) {
         SushiBar.customerCounter.increment();
-        System.out.println("Customer #" + customer.getID() + " was now seated.");
-        notify();
+        SushiBar.write("Customer #" + customer.getID() + " was now seated.");
         customers.add(customer);
     }
 
     public synchronized void leave(Customer customer) {
         customers.remove(customer);
-        notify();
+        SushiBar.write("Customer #" + customer.getID() + " left the bar.");
+        if (getCustomerCount() == areaSize - 1)
+            SushiBar.write("There is now a free seat in the shop.");
+        if (SushiBar.isOpen) {
+            synchronized (this) {
+                notify();
+            }
+        }
+        if (!SushiBar.isOpen && getCustomerCount() == 0) {
+            SushiBar.write("The total number of orders was: " + (SushiBar.servedOrders.get() + SushiBar.takeawayOrders.get()));
+            SushiBar.write("The total number of takeaway orders was: " + SushiBar.takeawayOrders.get());
+            SushiBar.write("The total number of served orders was: " + SushiBar.servedOrders.get());
+            SushiBar.write("The total number of customer was: " + SushiBar.customerCounter.get());
+        }
     }
 }

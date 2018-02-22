@@ -1,7 +1,8 @@
+import java.util.concurrent.TimeUnit;
 
 public class Door extends Thread {
 
-    public static final int DOOR_INTERVAL = 100; //Longest time between customers
+    public static final int DOOR_INTERVAL = 500; //Longest time between customers
 
     private int counter = 0;
     private ServingArea servingArea;
@@ -10,25 +11,22 @@ public class Door extends Thread {
         this.servingArea = servingArea;
     }
 
-    public int getCounter() {
-        return counter;
-    }
-
     public void run() {
         while (SushiBar.isOpen) {
             Customer customer = new Customer(counter, servingArea);
-            new Thread(customer).run();
-            System.out.println("Customer #" + customer.getID() + " is now created.");
-            if (servingArea.getCustomerCount() < servingArea.getAreaSize())
+            SushiBar.write("Customer #" + customer.getID() + " is now created.");
+            new Thread(customer).start();
+            if (servingArea.getCustomerCount() < servingArea.getAreaSize() && SushiBar.isOpen)
                 notifyCustomer();
             counter++;
             sleep();
         }
+        SushiBar.write("***** NO MORE CUSTOMERS - THE SHOP IS CLOSED NOW. *****");
     }
 
     private void sleep() {
         try {
-            Thread.sleep((int) Math.floor(Math.random() * DOOR_INTERVAL));
+            TimeUnit.MILLISECONDS.sleep((int) Math.floor(Math.random() * DOOR_INTERVAL));
         } catch (Exception e) {
 
         }
@@ -37,7 +35,7 @@ public class Door extends Thread {
     private void notifyCustomer() {
         try {
             synchronized (servingArea) {
-                notify();
+                servingArea.notify();
             }
         } catch(Exception e) {
 

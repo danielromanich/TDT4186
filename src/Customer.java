@@ -1,8 +1,8 @@
+import java.util.concurrent.TimeUnit;
 
 public class Customer extends Thread {
 
     private final int id;
-    private int state = 0;
     private ServingArea servingArea;
 
     public Customer(int id, ServingArea servingArea) {
@@ -15,32 +15,33 @@ public class Customer extends Thread {
     }
 
     public void run() {
-        System.out.println("Customer #" + id + " is now waiting for a free seat");
-
-        while (servingArea.getAreaSize() <= servingArea.getCustomerCount())
-            awaitServingArea();
+        SushiBar.write("Customer #" + id + " is now waiting for a free seat");
+        awaitServingArea();
         servingArea.enter(this);
-        int servingAmount = getServingAmount();
+        int servingAmount = getServingAmount(SushiBar.maxOrder);
         SushiBar.servedOrders.add(servingAmount);
-        SushiBar.takeawayOrders.add(SushiBar.maxOrder - servingAmount);
-        System.out.println("Customer #" + id + " is now eating sushi.");
-        try {
-            Thread.sleep((int) Math.floor(Math.random() * 500) + 5000);
-        } catch(Exception e) {
+        SushiBar.takeawayOrders.add(getServingAmount(SushiBar.maxOrder - servingAmount));
+        SushiBar.write("Customer #" + id + " is now eating sushi.");
 
+        try {
+            TimeUnit.SECONDS.sleep(2 + (int) Math.floor(Math.random() * 3));
+        } catch(Exception e) {
+            e.printStackTrace();
         }
         servingArea.leave(this);
     }
 
     private void awaitServingArea() {
-        try {
-            wait();
-        } catch (Exception e) {
-
+        synchronized (servingArea) {
+            try {
+                servingArea.wait();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    private int getServingAmount() {
-        return (int) Math.floor(Math.random() * (SushiBar.maxOrder - 1)) + 1;
+    private int getServingAmount(int max) {
+        return (int) Math.floor(Math.random() * (max - 1)) + 1;
     }
 }

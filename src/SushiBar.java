@@ -7,7 +7,7 @@ import java.io.IOException;
 public class SushiBar {
     //SushiBar settings
     private static int capacity = 10;
-    private static int duration = 3;
+    private static int duration = 10;
     public static int maxOrder = 10;
     public static int customerWait = 3000;
     public static int doorWait = 100;
@@ -29,10 +29,17 @@ public class SushiBar {
      */
     public static void main(String[] args) {
         log = new File(path + "log.txt");
+        if (log.exists())
+            log.delete();
+        try {
+            log.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         new Clock(duration);
         ServingArea servingArea = new ServingArea(capacity);
         Door door = new Door(servingArea);
-        new Thread(door).run(); //Start the door thread
+        new Thread(door).start(); //Start the door thread
     }
 
     //Writes actions in the log file and console
