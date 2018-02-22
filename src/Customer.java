@@ -17,27 +17,27 @@ public class Customer extends Thread {
     public void run() {
         SushiBar.write("Customer #" + id + " is now waiting for a free seat");
         awaitServingArea();
-        servingArea.enter(this);
-        int servingAmount = getServingAmount(SushiBar.maxOrder);
-        SushiBar.servedOrders.add(servingAmount);
-        SushiBar.takeawayOrders.add(getServingAmount(SushiBar.maxOrder - servingAmount));
-        SushiBar.write("Customer #" + id + " is now eating sushi.");
-
-        try {
-            TimeUnit.SECONDS.sleep(2 + (int) Math.floor(Math.random() * 3));
-        } catch(Exception e) {
-            e.printStackTrace();
+        if (SushiBar.isOpen) {
+            servingArea.enter(this);
+            int servingAmount = getServingAmount(SushiBar.maxOrder);
+            synchronized (servingArea) {
+                SushiBar.servedOrders.add(servingAmount);
+                SushiBar.takeawayOrders.add(getServingAmount(SushiBar.maxOrder - servingAmount));
+                SushiBar.write("Customer #" + id + " is now eating sushi.");
+            }
+            SushiBar.sleep(TimeUnit.SECONDS, 2 + (int) Math.floor(Math.random() * 3));
+            servingArea.leave(this);
         }
-        servingArea.leave(this);
     }
 
     private void awaitServingArea() {
         synchronized (servingArea) {
-            try {
-                servingArea.wait();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            if (servingArea.getCustomerCount() >= servingArea.getAreaSize())
+                try {
+                    servingArea.wait();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
         }
     }
 

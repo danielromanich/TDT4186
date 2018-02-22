@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class ServingArea {
 
-    private ArrayList<Customer> customers = new ArrayList<>();
     private final int areaSize;
+    private ArrayList<Customer> customers = new ArrayList<>();
 
     public ServingArea(int areaSize) {
         this.areaSize = areaSize;
@@ -27,12 +27,9 @@ public class ServingArea {
     public synchronized void leave(Customer customer) {
         customers.remove(customer);
         SushiBar.write("Customer #" + customer.getID() + " left the bar.");
-        if (getCustomerCount() == areaSize - 1)
-            SushiBar.write("There is now a free seat in the shop.");
-        if (SushiBar.isOpen) {
-            synchronized (this) {
-                notify();
-            }
+        SushiBar.write("There is now a free seat in the shop.");
+        synchronized (this) {
+            notify();
         }
         if (!SushiBar.isOpen && getCustomerCount() == 0) {
             SushiBar.write("The total number of orders was: " + (SushiBar.servedOrders.get() + SushiBar.takeawayOrders.get()));

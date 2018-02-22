@@ -16,29 +16,12 @@ public class Door extends Thread {
             Customer customer = new Customer(counter, servingArea);
             SushiBar.write("Customer #" + customer.getID() + " is now created.");
             new Thread(customer).start();
-            if (servingArea.getCustomerCount() < servingArea.getAreaSize() && SushiBar.isOpen)
-                notifyCustomer();
             counter++;
-            sleep();
+            SushiBar.sleep(TimeUnit.MILLISECONDS, (int) Math.floor(Math.random() * DOOR_INTERVAL));
         }
         SushiBar.write("***** NO MORE CUSTOMERS - THE SHOP IS CLOSED NOW. *****");
-    }
-
-    private void sleep() {
-        try {
-            TimeUnit.MILLISECONDS.sleep((int) Math.floor(Math.random() * DOOR_INTERVAL));
-        } catch (Exception e) {
-
-        }
-    }
-
-    private void notifyCustomer() {
-        try {
-            synchronized (servingArea) {
-                servingArea.notify();
-            }
-        } catch(Exception e) {
-
+        synchronized (servingArea) {
+            servingArea.notifyAll();
         }
     }
 

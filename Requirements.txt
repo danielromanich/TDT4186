@@ -1,0 +1,8 @@
+The wait() function makes the thread wait for a notify on the monitor it is waiting for.
+The notify() function wakes one thread that is waiting for the monitor
+The notifyAll() function wakes all threads that are waiting for the monitor.
+
+The order variables are shared between all of the customer threads, and is handled by
+
+The main thread is reporting the statistics and is able to time it right by reporting when the last customer leaves
+(That is when a customer leaves, the bar is closed and there are no customers left)

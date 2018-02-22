@@ -1,205 +1,213 @@
-14:02:45, Customer #0 is now created.
-14:02:45, Customer #0 is now waiting for a free seat
-14:02:45, Customer #1 is now created.
-14:02:45, Customer #1 is now waiting for a free seat
-14:02:45, Customer #0 was now seated.
-14:02:45, Customer #0 is now eating sushi.
-14:02:45, Customer #2 is now created.
-14:02:45, Customer #1 was now seated.
-14:02:45, Customer #2 is now waiting for a free seat
-14:02:45, Customer #1 is now eating sushi.
-14:02:46, Customer #3 is now created.
-14:02:46, Customer #2 was now seated.
-14:02:46, Customer #3 is now waiting for a free seat
-14:02:46, Customer #2 is now eating sushi.
-14:02:46, Customer #4 is now created.
-14:02:46, Customer #3 was now seated.
-14:02:46, Customer #4 is now waiting for a free seat
-14:02:46, Customer #3 is now eating sushi.
-14:02:46, Customer #5 is now created.
-14:02:46, Customer #4 was now seated.
-14:02:46, Customer #5 is now waiting for a free seat
-14:02:46, Customer #4 is now eating sushi.
-14:02:47, Customer #6 is now created.
-14:02:47, Customer #5 was now seated.
-14:02:47, Customer #6 is now waiting for a free seat
-14:02:47, Customer #5 is now eating sushi.
-14:02:47, Customer #7 is now created.
-14:02:47, Customer #6 was now seated.
-14:02:47, Customer #7 is now waiting for a free seat
-14:02:47, Customer #6 is now eating sushi.
-14:02:47, Customer #8 is now created.
-14:02:47, Customer #7 was now seated.
-14:02:47, Customer #8 is now waiting for a free seat
-14:02:47, Customer #7 is now eating sushi.
-14:02:47, Customer #1 left the bar.
-14:02:47, Customer #8 was now seated.
-14:02:47, Customer #8 is now eating sushi.
-14:02:47, Customer #9 is now created.
-14:02:47, Customer #9 is now waiting for a free seat
-14:02:48, Customer #10 is now created.
-14:02:48, Customer #9 was now seated.
-14:02:48, Customer #10 is now waiting for a free seat
-14:02:48, Customer #9 is now eating sushi.
-14:02:48, Customer #2 left the bar.
-14:02:48, Customer #10 was now seated.
-14:02:48, Customer #10 is now eating sushi.
-14:02:48, Customer #11 is now created.
-14:02:48, Customer #11 is now waiting for a free seat
-14:02:48, Customer #12 is now created.
-14:02:48, Customer #11 was now seated.
-14:02:48, Customer #12 is now waiting for a free seat
-14:02:48, Customer #11 is now eating sushi.
-14:02:48, Customer #13 is now created.
-14:02:48, Customer #13 is now waiting for a free seat
-14:02:48, Customer #3 left the bar.
-14:02:48, There is now a free seat in the shop.
-14:02:48, Customer #12 was now seated.
-14:02:48, Customer #12 is now eating sushi.
-14:02:48, Customer #14 is now created.
-14:02:48, Customer #14 is now waiting for a free seat
-14:02:48, Customer #0 left the bar.
-14:02:48, There is now a free seat in the shop.
-14:02:48, Customer #13 was now seated.
-14:02:48, Customer #13 is now eating sushi.
-14:02:48, Customer #15 is now created.
-14:02:48, Customer #15 is now waiting for a free seat
-14:02:49, Customer #5 left the bar.
-14:02:49, There is now a free seat in the shop.
-14:02:49, Customer #14 was now seated.
-14:02:49, Customer #14 is now eating sushi.
-14:02:49, Customer #16 is now created.
-14:02:49, Customer #16 is now waiting for a free seat
-14:02:49, Customer #17 is now created.
-14:02:49, Customer #17 is now waiting for a free seat
-14:02:49, Customer #7 left the bar.
-14:02:49, There is now a free seat in the shop.
-14:02:49, Customer #15 was now seated.
-14:02:49, Customer #15 is now eating sushi.
-14:02:49, Customer #18 is now created.
-14:02:49, Customer #18 is now waiting for a free seat
-14:02:49, Customer #4 left the bar.
-14:02:49, There is now a free seat in the shop.
-14:02:49, Customer #16 was now seated.
-14:02:49, Customer #16 is now eating sushi.
-14:02:49, Customer #8 left the bar.
-14:02:49, There is now a free seat in the shop.
-14:02:49, Customer #17 was now seated.
-14:02:49, Customer #17 is now eating sushi.
-14:02:49, Customer #19 is now created.
-14:02:49, Customer #19 is now waiting for a free seat
-14:02:50, Customer #6 left the bar.
-14:02:50, There is now a free seat in the shop.
-14:02:50, Customer #18 was now seated.
-14:02:50, Customer #18 is now eating sushi.
-14:02:50, Customer #10 left the bar.
-14:02:50, There is now a free seat in the shop.
-14:02:50, Customer #19 was now seated.
-14:02:50, Customer #19 is now eating sushi.
-14:02:50, Customer #20 is now created.
-14:02:50, Customer #20 is now waiting for a free seat
-14:02:50, Customer #21 is now created.
-14:02:50, Customer #21 is now waiting for a free seat
-14:02:50, Customer #13 left the bar.
-14:02:50, There is now a free seat in the shop.
-14:02:50, Customer #20 was now seated.
-14:02:50, Customer #20 is now eating sushi.
-14:02:50, Customer #22 is now created.
-14:02:50, Customer #22 is now waiting for a free seat
-14:02:51, Customer #9 left the bar.
-14:02:51, There is now a free seat in the shop.
-14:02:51, Customer #21 was now seated.
-14:02:51, Customer #21 is now eating sushi.
-14:02:51, Customer #23 is now created.
-14:02:51, Customer #23 is now waiting for a free seat
-14:02:51, Customer #15 left the bar.
-14:02:51, There is now a free seat in the shop.
-14:02:51, Customer #22 was now seated.
-14:02:51, Customer #22 is now eating sushi.
-14:02:51, Customer #24 is now created.
-14:02:51, Customer #24 is now waiting for a free seat
-14:02:51, Customer #25 is now created.
-14:02:51, Customer #25 is now waiting for a free seat
-14:02:52, Customer #26 is now created.
-14:02:52, Customer #26 is now waiting for a free seat
-14:02:52, Customer #19 left the bar.
-14:02:52, There is now a free seat in the shop.
-14:02:52, Customer #23 was now seated.
-14:02:52, Customer #23 is now eating sushi.
-14:02:52, Customer #27 is now created.
-14:02:52, Customer #27 is now waiting for a free seat
-14:02:52, Customer #11 left the bar.
-14:02:52, There is now a free seat in the shop.
-14:02:52, Customer #24 was now seated.
-14:02:52, Customer #24 is now eating sushi.
-14:02:52, Customer #28 is now created.
-14:02:52, Customer #28 is now waiting for a free seat
-14:02:52, Customer #12 left the bar.
-14:02:52, There is now a free seat in the shop.
-14:02:52, Customer #25 was now seated.
-14:02:52, Customer #25 is now eating sushi.
-14:02:52, Customer #29 is now created.
-14:02:52, Customer #29 is now waiting for a free seat
-14:02:52, Customer #17 left the bar.
-14:02:52, There is now a free seat in the shop.
-14:02:52, Customer #26 was now seated.
-14:02:52, Customer #26 is now eating sushi.
-14:02:52, Customer #30 is now created.
-14:02:52, Customer #30 is now waiting for a free seat
-14:02:53, Customer #14 left the bar.
-14:02:53, There is now a free seat in the shop.
-14:02:53, Customer #27 was now seated.
-14:02:53, Customer #27 is now eating sushi.
-14:02:53, Customer #31 is now created.
-14:02:53, Customer #31 is now waiting for a free seat
-14:02:53, Customer #22 left the bar.
-14:02:53, There is now a free seat in the shop.
-14:02:53, Customer #28 was now seated.
-14:02:53, Customer #28 is now eating sushi.
-14:02:53, Customer #32 is now created.
-14:02:53, Customer #16 left the bar.
-14:02:53, There is now a free seat in the shop.
-14:02:53, Customer #32 is now waiting for a free seat
-14:02:53, Customer #29 was now seated.
-14:02:53, Customer #29 is now eating sushi.
-14:02:53, Customer #30 was now seated.
-14:02:53, Customer #30 is now eating sushi.
-14:02:53, Customer #20 left the bar.
-14:02:53, Customer #31 was now seated.
-14:02:53, Customer #31 is now eating sushi.
-14:02:53, Customer #33 is now created.
-14:02:53, Customer #33 is now waiting for a free seat
-14:02:54, Customer #21 left the bar.
-14:02:54, Customer #34 is now created.
-14:02:54, Customer #34 is now waiting for a free seat
-14:02:54, Customer #32 was now seated.
-14:02:54, Customer #32 is now eating sushi.
-14:02:54, Customer #18 left the bar.
-14:02:54, Customer #33 was now seated.
-14:02:54, Customer #33 is now eating sushi.
-14:02:54, Customer #23 left the bar.
-14:02:54, Customer #34 was now seated.
-14:02:54, Customer #34 is now eating sushi.
-14:02:54, Customer #35 is now created.
-14:02:54, Customer #35 is now waiting for a free seat
-14:02:54, Customer #36 is now created.
-14:02:54, Customer #36 is now waiting for a free seat
-14:02:54, Customer #37 is now created.
-14:02:54, Customer #37 is now waiting for a free seat
-14:02:55, Customer #24 left the bar.
-14:02:55, Customer #28 left the bar.
-14:02:55, There is now a free seat in the shop.
-14:02:55, Customer #25 left the bar.
-14:02:55, ***** NO MORE CUSTOMERS - THE SHOP IS CLOSED NOW. *****
-14:02:56, Customer #27 left the bar.
-14:02:56, Customer #29 left the bar.
-14:02:56, Customer #31 left the bar.
-14:02:56, Customer #26 left the bar.
-14:02:57, Customer #32 left the bar.
-14:02:57, Customer #33 left the bar.
-14:02:57, Customer #30 left the bar.
-14:02:58, Customer #34 left the bar.
-14:02:58, The total number of orders was: 231
-14:02:58, The total number of takeaway orders was: 85
-14:02:58, The total number of served orders was: 146
-14:02:58, The total number of customer was: 35
+14:30:21, Customer #0 is now created.
+14:30:21, Customer #0 is now waiting for a free seat
+14:30:21, Customer #0 was now seated.
+14:30:21, Customer #0 is now eating sushi.
+14:30:21, Customer #1 is now created.
+14:30:21, Customer #1 is now waiting for a free seat
+14:30:21, Customer #1 was now seated.
+14:30:21, Customer #1 is now eating sushi.
+14:30:21, Customer #2 is now created.
+14:30:21, Customer #2 is now waiting for a free seat
+14:30:21, Customer #2 was now seated.
+14:30:21, Customer #2 is now eating sushi.
+14:30:21, Customer #3 is now created.
+14:30:21, Customer #3 is now waiting for a free seat
+14:30:21, Customer #3 was now seated.
+14:30:21, Customer #3 is now eating sushi.
+14:30:21, Customer #4 is now created.
+14:30:21, Customer #4 is now waiting for a free seat
+14:30:21, Customer #4 was now seated.
+14:30:21, Customer #4 is now eating sushi.
+14:30:22, Customer #5 is now created.
+14:30:22, Customer #5 is now waiting for a free seat
+14:30:22, Customer #5 was now seated.
+14:30:22, Customer #5 is now eating sushi.
+14:30:22, Customer #6 is now created.
+14:30:22, Customer #6 is now waiting for a free seat
+14:30:22, Customer #6 was now seated.
+14:30:22, Customer #6 is now eating sushi.
+14:30:22, Customer #7 is now created.
+14:30:22, Customer #7 is now waiting for a free seat
+14:30:22, Customer #7 was now seated.
+14:30:22, Customer #7 is now eating sushi.
+14:30:23, Customer #0 left the bar.
+14:30:23, There is now a free seat in the shop.
+14:30:23, Customer #8 is now created.
+14:30:23, Customer #8 is now waiting for a free seat
+14:30:23, Customer #8 was now seated.
+14:30:23, Customer #8 is now eating sushi.
+14:30:23, Customer #9 is now created.
+14:30:23, Customer #9 is now waiting for a free seat
+14:30:23, Customer #9 was now seated.
+14:30:23, Customer #9 is now eating sushi.
+14:30:23, Customer #10 is now created.
+14:30:23, Customer #10 is now waiting for a free seat
+14:30:23, Customer #10 was now seated.
+14:30:23, Customer #10 is now eating sushi.
+14:30:23, Customer #11 is now created.
+14:30:23, Customer #11 is now waiting for a free seat
+14:30:23, Customer #12 is now created.
+14:30:23, Customer #12 is now waiting for a free seat
+14:30:23, Customer #4 left the bar.
+14:30:23, There is now a free seat in the shop.
+14:30:23, Customer #11 was now seated.
+14:30:23, Customer #11 is now eating sushi.
+14:30:24, Customer #13 is now created.
+14:30:24, Customer #13 is now waiting for a free seat
+14:30:24, Customer #14 is now created.
+14:30:24, Customer #14 is now waiting for a free seat
+14:30:24, Customer #15 is now created.
+14:30:24, Customer #15 is now waiting for a free seat
+14:30:24, Customer #1 left the bar.
+14:30:24, There is now a free seat in the shop.
+14:30:24, Customer #12 was now seated.
+14:30:24, Customer #12 is now eating sushi.
+14:30:24, Customer #2 left the bar.
+14:30:24, There is now a free seat in the shop.
+14:30:24, Customer #13 was now seated.
+14:30:24, Customer #13 is now eating sushi.
+14:30:24, Customer #3 left the bar.
+14:30:24, There is now a free seat in the shop.
+14:30:24, Customer #14 was now seated.
+14:30:24, Customer #14 is now eating sushi.
+14:30:25, Customer #16 is now created.
+14:30:25, Customer #16 is now waiting for a free seat
+14:30:25, Customer #17 is now created.
+14:30:25, Customer #17 is now waiting for a free seat
+14:30:25, Customer #18 is now created.
+14:30:25, Customer #18 is now waiting for a free seat
+14:30:25, Customer #9 left the bar.
+14:30:25, There is now a free seat in the shop.
+14:30:25, Customer #15 was now seated.
+14:30:25, Customer #15 is now eating sushi.
+14:30:25, Customer #19 is now created.
+14:30:25, Customer #19 is now waiting for a free seat
+14:30:25, Customer #10 left the bar.
+14:30:25, There is now a free seat in the shop.
+14:30:25, Customer #16 was now seated.
+14:30:25, Customer #16 is now eating sushi.
+14:30:25, Customer #20 is now created.
+14:30:25, Customer #20 is now waiting for a free seat
+14:30:26, Customer #11 left the bar.
+14:30:26, There is now a free seat in the shop.
+14:30:26, Customer #17 was now seated.
+14:30:26, Customer #17 is now eating sushi.
+14:30:26, Customer #21 is now created.
+14:30:26, Customer #21 is now waiting for a free seat
+14:30:26, Customer #5 left the bar.
+14:30:26, There is now a free seat in the shop.
+14:30:26, Customer #18 was now seated.
+14:30:26, Customer #18 is now eating sushi.
+14:30:26, Customer #8 left the bar.
+14:30:26, There is now a free seat in the shop.
+14:30:26, Customer #19 was now seated.
+14:30:26, Customer #19 is now eating sushi.
+14:30:26, Customer #22 is now created.
+14:30:26, Customer #22 is now waiting for a free seat
+14:30:26, Customer #6 left the bar.
+14:30:26, There is now a free seat in the shop.
+14:30:26, Customer #20 was now seated.
+14:30:26, Customer #20 is now eating sushi.
+14:30:26, Customer #23 is now created.
+14:30:26, Customer #23 is now waiting for a free seat
+14:30:26, Customer #24 is now created.
+14:30:26, Customer #24 is now waiting for a free seat
+14:30:26, Customer #7 left the bar.
+14:30:26, There is now a free seat in the shop.
+14:30:26, Customer #21 was now seated.
+14:30:26, Customer #21 is now eating sushi.
+14:30:27, Customer #25 is now created.
+14:30:27, Customer #25 is now waiting for a free seat
+14:30:27, Customer #26 is now created.
+14:30:27, Customer #26 is now waiting for a free seat
+14:30:27, Customer #12 left the bar.
+14:30:27, There is now a free seat in the shop.
+14:30:27, Customer #22 was now seated.
+14:30:27, Customer #22 is now eating sushi.
+14:30:27, Customer #14 left the bar.
+14:30:27, There is now a free seat in the shop.
+14:30:27, Customer #23 was now seated.
+14:30:27, Customer #23 is now eating sushi.
+14:30:27, Customer #27 is now created.
+14:30:27, Customer #27 is now waiting for a free seat
+14:30:28, Customer #17 left the bar.
+14:30:28, There is now a free seat in the shop.
+14:30:28, Customer #24 was now seated.
+14:30:28, Customer #24 is now eating sushi.
+14:30:28, Customer #28 is now created.
+14:30:28, Customer #28 is now waiting for a free seat
+14:30:28, Customer #29 is now created.
+14:30:28, Customer #29 is now waiting for a free seat
+14:30:28, Customer #13 left the bar.
+14:30:28, There is now a free seat in the shop.
+14:30:28, Customer #25 was now seated.
+14:30:28, Customer #25 is now eating sushi.
+14:30:28, Customer #30 is now created.
+14:30:28, Customer #30 is now waiting for a free seat
+14:30:28, Customer #21 left the bar.
+14:30:28, There is now a free seat in the shop.
+14:30:28, Customer #26 was now seated.
+14:30:28, Customer #26 is now eating sushi.
+14:30:29, Customer #31 is now created.
+14:30:29, Customer #31 is now waiting for a free seat
+14:30:29, Customer #15 left the bar.
+14:30:29, There is now a free seat in the shop.
+14:30:29, Customer #27 was now seated.
+14:30:29, Customer #27 is now eating sushi.
+14:30:29, Customer #32 is now created.
+14:30:29, Customer #32 is now waiting for a free seat
+14:30:29, Customer #16 left the bar.
+14:30:29, There is now a free seat in the shop.
+14:30:29, Customer #28 was now seated.
+14:30:29, Customer #28 is now eating sushi.
+14:30:29, Customer #33 is now created.
+14:30:29, Customer #33 is now waiting for a free seat
+14:30:30, Customer #24 left the bar.
+14:30:30, There is now a free seat in the shop.
+14:30:30, Customer #29 was now seated.
+14:30:30, Customer #29 is now eating sushi.
+14:30:30, Customer #18 left the bar.
+14:30:30, There is now a free seat in the shop.
+14:30:30, Customer #30 was now seated.
+14:30:30, Customer #30 is now eating sushi.
+14:30:30, Customer #19 left the bar.
+14:30:30, There is now a free seat in the shop.
+14:30:30, Customer #31 was now seated.
+14:30:30, Customer #31 is now eating sushi.
+14:30:30, Customer #34 is now created.
+14:30:30, Customer #34 is now waiting for a free seat
+14:30:30, Customer #20 left the bar.
+14:30:30, There is now a free seat in the shop.
+14:30:30, Customer #32 was now seated.
+14:30:30, Customer #32 is now eating sushi.
+14:30:30, Customer #35 is now created.
+14:30:30, Customer #35 is now waiting for a free seat
+14:30:30, Customer #36 is now created.
+14:30:30, Customer #36 is now waiting for a free seat
+14:30:30, Customer #37 is now created.
+14:30:30, Customer #37 is now waiting for a free seat
+14:30:31, ***** NO MORE CUSTOMERS - THE SHOP IS CLOSED NOW. *****
+14:30:31, Customer #22 left the bar.
+14:30:31, There is now a free seat in the shop.
+14:30:31, Customer #25 left the bar.
+14:30:31, There is now a free seat in the shop.
+14:30:31, Customer #23 left the bar.
+14:30:31, There is now a free seat in the shop.
+14:30:31, Customer #28 left the bar.
+14:30:31, There is now a free seat in the shop.
+14:30:31, Customer #26 left the bar.
+14:30:31, There is now a free seat in the shop.
+14:30:32, Customer #32 left the bar.
+14:30:32, There is now a free seat in the shop.
+14:30:33, Customer #29 left the bar.
+14:30:33, There is now a free seat in the shop.
+14:30:33, Customer #30 left the bar.
+14:30:33, There is now a free seat in the shop.
+14:30:33, Customer #31 left the bar.
+14:30:33, There is now a free seat in the shop.
+14:30:33, Customer #27 left the bar.
+14:30:33, There is now a free seat in the shop.
+14:30:33, The total number of orders was: 247
+14:30:33, The total number of takeaway orders was: 80
+14:30:33, The total number of served orders was: 167
+14:30:33, The total number of customer was: 33

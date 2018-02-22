@@ -2,6 +2,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 
 public class SushiBar {
@@ -55,9 +56,9 @@ public class SushiBar {
         }
     }
 
-    public static void sleep(int duration) {
+    public static void sleep(TimeUnit unit, int duration) {
         try {
-            Thread.sleep(duration);
+            unit.sleep(duration);
         } catch (Exception e) {
 
         }
