@@ -3,7 +3,7 @@ The notify() function wakes one thread that is waiting for the monitor
 The notifyAll() function wakes all threads that are waiting for the monitor.
 
 The difference between notify() and notifyAll() is that notify unlocks the first lock in the queue, while
-notifyAll unlocks all the locks. 
+notifyAll unlocks all the locks.
 
 The order variables are shared between all of the customer threads, and is synchronized through the waitingArea object.
 

@@ -4,8 +4,6 @@
  */
 public class Door implements Runnable {
 
-    public static final int CUSTOMER_DELAY = 50;
-
     private WaitingArea waitingArea;
     private int counter;
 

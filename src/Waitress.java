@@ -28,7 +28,9 @@ public class Waitress implements Runnable {
                 waitForArea();
                 customer = waitingArea.next();
             }
-            customer.order();
+            synchronized (this.waitingArea) {
+                customer.order();
+            }
             SushiBar.sleep(SushiBar.waitressWait + SushiBar.random(0, 50));
             SushiBar.write("Customer #" + customer.getCustomerID() + " is now eating.");
             SushiBar.sleep(SushiBar.customerWait + SushiBar.random(0, 150));
