@@ -21,8 +21,9 @@ public class Waitress implements Runnable {
      */
     @Override
     public void run() {
+        Customer customer = null;
         while (SushiBar.isOpen) {
-            Customer customer = waitingArea.next();
+            customer = waitingArea.next();
             while (customer == null) {
                 waitForArea();
                 customer = waitingArea.next();
@@ -32,6 +33,8 @@ public class Waitress implements Runnable {
             SushiBar.write("Customer #" + customer.getCustomerID() + " is now eating.");
             SushiBar.sleep(SushiBar.customerWait + SushiBar.random(0, 150));
             SushiBar.write("Customer #" + customer.getCustomerID() + " is now leaving.");
+        }
+        if (customer != null) {
             if (SushiBar.lastCustomer.get() == customer.getCustomerID()) {
                 SushiBar.write("Total orders: " + (SushiBar.takeawayOrders.get() + SushiBar.servedOrders.get()));
                 SushiBar.write("Served orders: " + (SushiBar.servedOrders.get()));
