@@ -3,6 +3,7 @@ import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
 public class Clock {
     Timer timer;
 
@@ -22,7 +23,7 @@ public class Clock {
     public static String getTime() {
         // get current time
         Calendar cal = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss:SS");
         return sdf.format(cal.getTime());
     }
 }

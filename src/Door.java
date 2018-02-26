@@ -1,28 +1,48 @@
-import java.util.concurrent.TimeUnit;
+/**
+ * This class implements the Door component of the sushi bar assignment
+ * The Door corresponds to the Producer in the producer/consumer problem
+ */
+public class Door implements Runnable {
 
-public class Door extends Thread {
+    public static final int CUSTOMER_DELAY = 50;
 
-    public static final int DOOR_INTERVAL = 500; //Longest time between customers
+    private WaitingArea waitingArea;
+    private int counter;
 
-    private int counter = 0;
-    private ServingArea servingArea;
-
-    public Door(ServingArea servingArea) {
-        this.servingArea = servingArea;
+    /**
+     * Creates a new Door. Make sure to save the
+     * @param waitingArea   The customer queue waiting for a seat
+     */
+    public Door(WaitingArea waitingArea) {
+        this.waitingArea = waitingArea;
     }
 
+    /**
+     * This method will run when the door thread is created (and started)
+     * The method should create customers at random intervals and try to put them in the customerQueue
+     */
+    @Override
     public void run() {
-        while (SushiBar.isOpen) {
-            Customer customer = new Customer(counter, servingArea);
-            SushiBar.write("Customer #" + customer.getID() + " is now created.");
-            new Thread(customer).start();
+        while(SushiBar.isOpen) {
+            Customer customer = new Customer(counter);
             counter++;
-            SushiBar.sleep(TimeUnit.MILLISECONDS, (int) Math.floor(Math.random() * DOOR_INTERVAL));
+            if (waitingArea.getCustomerCount() >= waitingArea.getSize())
+                waitForArea();
+            waitingArea.enter(customer);
+            SushiBar.sleep(SushiBar.doorWait + SushiBar.random(0, 250));
         }
         SushiBar.write("***** NO MORE CUSTOMERS - THE SHOP IS CLOSED NOW. *****");
-        synchronized (servingArea) {
-            servingArea.notifyAll();
+    }
+
+    public void waitForArea() {
+        synchronized (this.waitingArea) {
+            try {
+                this.waitingArea.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
+    // Add more methods as you see fit
 }
